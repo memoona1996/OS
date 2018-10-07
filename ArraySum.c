@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 
-int ar[1000];
+int arr[1000];
 void * MySumFunc(void * arg);
 int main()
 {
@@ -49,7 +49,7 @@ void * MySumFunc(void * arg)
  	int start=stop-100;
 	int to_ret=0;
 	for (int i=start; i<stop; i++)
-		to_ret+=ar[i];
+		to_ret+=arr[i];
  	
 	return (void*)to_ret;
 		
